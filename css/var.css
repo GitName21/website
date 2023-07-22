@@ -1,0 +1,12 @@
+:root{
+	/* 背景 */
+	--bg-main:#171514;
+	--bg-secondly:#232222;
+	--bg-less:#373737;
+	--bg-focus:#E35B5B;
+	
+	/* 字体色 */
+	--color-main:#ffffff;
+	--color-secondly:#A6A6A6;
+	--color-focus:#D43030;
+}
