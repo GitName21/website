@@ -171,7 +171,7 @@ body{background-color: var(--bg-main);}
 	/* 列表 */
 	.work-details-nav{margin-bottom: 1rem;}
 	.content-lists-wrap li{width: 48%;margin-top: 1.5rem;}
-	.content-lists-wrap>li>div:first-child{height: 258px;overflow: hidden;}
+	.content-lists-wrap>li>a>div:first-child{height: 373px;overflow: hidden;} /*初始258px*/
 	.content-lists-tit div:first-child{width:100%;text-align: center;}
 	.content-lists-tit div:last-child{display: none;}
 	/* 翻页 */
