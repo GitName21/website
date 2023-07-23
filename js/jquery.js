@@ -212,10 +212,10 @@ $(document).ready(function(){
 		$('.full-screen-img').fadeOut(300);
 	})
 	// 将图片设置为盒子的背景填充
-	var Img = $('.content-lists-wrap li div:first-child img').length; //获取图片数量
+	var Img = $('.content-lists-wrap li a div:first-child img').length; //获取图片数量
 	for(var i=0;i<Img;i++){
-		var ImgBg = $('.content-lists-wrap li div:first-child img').eq(i).attr("src");
-		$('.content-lists-wrap li>div:first-child').eq(i).css({"background":"url('" + ImgBg + "') 100% no-repeat"})
+		var ImgBg = $('.content-lists-wrap li a div:first-child img').eq(i).attr("src");
+		$('.content-lists-wrap li>a>div:first-child').eq(i).css({"background":"url('" + ImgBg + "') 100% no-repeat"})
 	}
 	
 	// 回到顶部
