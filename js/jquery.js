@@ -140,12 +140,18 @@ $(document).ready(function(){
 		(function ($) {
 			$.getUrlParam = function (name) {
 				var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)");
-				var r = window.location.search.substr(1).match(reg);
+				var r = decodeURI(window.location.search).substr(1).match(reg); //decodeURI(window.location.search),get参数中存在中文，用decodeURI转码，避免乱码
 				if (r != null) return unescape(r[2]); return null;
 			}
 		})(jQuery);
 		var imgsrc = $.getUrlParam('imgsrc');
-		$(".work-details-img img").attr ("src",imgsrc);
+		var imgCon = $.getUrlParam('imgCon');
+		
+		$(".work-details-img img").attr("src",imgsrc);
+		
+		if($.getUrlParam('imgCon')){
+			$(".work-details-tit").html(imgCon);
+		}
 	});	
 	
 	
@@ -199,5 +205,16 @@ $(document).ready(function(){
 		// 关闭全屏看图
 		$('.full-screen-img').fadeOut(300);
 	})
+	// 将图片设置为盒子的背景填充
+	var Img = $('.content-lists-wrap li div:first-child img').length; //获取图片数量
+	for(var i=0;i<Img;i++){
+		var ImgBg = $('.content-lists-wrap li div:first-child img').eq(i).attr("src");
+		$('.content-lists-wrap li>div:first-child').eq(i).css({"background":"url('" + ImgBg + "') 100% no-repeat"})
+	}
+	
+	// 回到顶部
+	$('.footer div div:last-child').click(function(){
+		$("html,body").finish().animate({"scrollTop":"0px"},900);
+	});
 	
 });
