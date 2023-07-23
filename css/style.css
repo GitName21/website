@@ -97,9 +97,9 @@ body{background-color: var(--bg-main);}
 .work-details-statement{color: var(--color-secondly);line-height: 2rem;}
 /* 全屏看图 */
 .full-screen-img{display: flex;flex-wrap: wrap;justify-content: center;align-items: center;position: absolute;height: 100%;top: 0;max-width:70rem;display: none;overflow-y: scroll;overflow-x: hidden;}
-.full-screen-img img{height: auto;max-width: 100%;margin: 5rem auto 5rem auto;position: relative;}
+.full-screen-img img{height: auto;max-width: 100%;margin: 5rem auto 5rem auto;position: relative;z-index: 99;}
 .full-screen-img::-webkit-scrollbar{/*隐藏滚轮*/display: none;}
-.full-screen-img-tit{width: 100%;height: auto;color: var(--color-main);background-color: var(--bg-main);position: fixed;top: 0;z-index: 99;display: none;}
+.full-screen-img-tit{width: 100%;height: auto;color: var(--color-main);background-color: var(--bg-main);position: fixed;top: 0;z-index: 999;display: none;}
 .full-screen-img-tit ul{width: 92%;height: 5rem;color: var(--color-main);line-height: 5rem;display: flex;align-items: center;margin: 0 auto;}
 .full-screen-back{width: auto;height: auto;display: flex;align-items: center;margin-right: 0.5rem;}
 
