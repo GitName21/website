@@ -100,6 +100,11 @@ $(document).ready(function(){
 		searchClose();
 		// 关闭全屏看图
 		$('.full-screen-img').fadeOut()
+		// 关闭移动端搜索
+		$('.search-mobile-wrap').css({"transform":"translateX(-100%)"})
+		$('.nav-wrap').css({"transform":"translateX(0)","transition":"all 0.3s ease"});
+		$('.content').css({"transform":"translateX(0)","transition":"all 0.3s ease"});
+		$('.footer div').css({"transform":"translateX(0)","transition":"all 0.3s ease"});
 	})
 	
 	// PC搜索
@@ -216,5 +221,21 @@ $(document).ready(function(){
 	$('.footer div div:last-child').click(function(){
 		$("html,body").finish().animate({"scrollTop":"0px"},900);
 	});
+	
+	// 移动端搜索
+	$('.nav-mobile-search').click(function(){
+		mask();
+		$('.search-mobile-wrap').css({"transform":"translateX(0)"});
+		$('.nav-wrap').css({"transform":"translateX(94%)","transition":"all 0.3s ease"});
+		$('.content').css({"transform":"translateX(94%)","transition":"all 0.3s ease"});
+		$('.footer div').css({"transform":"translateX(94%)","transition":"all 0.3s ease"});
+	})
+	$('.search-mobile div svg').click(function(){
+		$(".mask").fadeOut(300);
+		$('.search-mobile-wrap').css({"transform":"translateX(-100%)"})
+		$('.nav-wrap').css({"transform":"translateX(0)","transition":"all 0.3s ease"});
+		$('.content').css({"transform":"translateX(0)","transition":"all 0.3s ease"});
+		$('.footer div').css({"transform":"translateX(0)","transition":"all 0.3s ease"});
+	})
 	
 });

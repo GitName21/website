@@ -102,6 +102,21 @@ body{background-color: var(--bg-main);}
 .full-screen-img-tit{width: 100%;height: auto;color: var(--color-main);background-color: var(--bg-main);position: fixed;top: 0;z-index: 999;display: none;}
 .full-screen-img-tit ul{width: 92%;height: 5rem;color: var(--color-main);line-height: 5rem;display: flex;align-items: center;margin: 0 auto;}
 .full-screen-back{width: auto;height: auto;display: flex;align-items: center;margin-right: 0.5rem;}
+/* 移动端搜索 */
+.search-mobile-wrap{width: 78%;height: 100%;position: absolute;top: 0;left: 0;background-color: var(--bg-secondly);padding: 5%;transform: translateX(-100%);transition: all 0.3s ease;z-index: 999;display: none;}
+.search-mobile{width: 100%;height: auto;display: flex;flex-wrap: wrap;justify-content: space-between;align-items: center;}
+.search-mobile div:first-child{display: flex;justify-content: flex-start;width: 100%;margin: 0 0 1rem 0;}
+.search-mobile div:last-child{position: relative;width: 100%;}
+.search-mobile input[name="search-mobile-txt"]{width: auto;height: 2.8rem;display: flex;flex-wrap: nowrap;justify-content: space-between;width: 80%;outline: 0;border: 0;padding: 0 15% 0 5%;border-radius: 0.2rem;}
+.search-mobile input[name="search-mobile-btn"]{position: absolute;top: 0;right: 0;width: 2.8rem;height: 2.8rem;outline:none;border: 0;border-radius: 0 0.2rem 0.2rem 0;background-color: rgba(0, 0, 0, 0);}
+/* 记录 */
+.mobile-record{margin-top: 2rem;font-size: 0.875rem;color: var(--color-secondly);}
+.mobile-record p{margin: 0 0 0.5rem 0.5rem;}
+.mobile-record p:first-child{margin: 0 0 0.5rem 0;}
+/* 推送 */
+.mobile-search-news{margin-top: 2rem;font-size: 0.875rem;color: var(--color-secondly);}
+.mobile-search-news div{margin: 0 0 0.5rem 0;}
+.mobile-search-news li{margin: 0 0 0.5rem 0.5rem;}
 
 /* 文章页 */
 .article-wrap{width: 100%;height: auto;display: flex;justify-content: space-between;flex-wrap: wrap;align-items: flex-start;}
@@ -175,6 +190,8 @@ body{background-color: var(--bg-main);}
 	/* 全屏看图 */
 	.full-screen-img{background-color: var(--bg-main);width:100%;}
 	.full-screen-img-tit{display: block;}
+	/* 移动端搜索 */
+	.search-mobile-wrap{display: block;}
 	
 	/* 图片详情页 */
 	.work-details-img{width: 96%;}
