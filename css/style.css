@@ -12,6 +12,7 @@ body{background-color: var(--bg-main);}
 .nav-wrap{width: 70rem;height: 5rem;margin: 0 auto;display: flex;justify-content: space-between;align-items: center;color: var(--color-secondly);}
 .nav-mobile-search{display: none;}
 .nav-menu{width: 18%;display: flex;justify-content: space-between;}
+.nav-menu div:hover{color: var(--color-focus);}
 .nav-function{display: flex;justify-content: space-between;width: 18%;}
 .nav-function div{display: flex;align-items: center;cursor: pointer;}
 .nav-function>div:first-child{background-color: var(--bg-less);font-size: 0.875rem;padding: 0.5rem;border-radius: 100rem;}
