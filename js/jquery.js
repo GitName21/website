@@ -162,6 +162,7 @@ $(document).ready(function(){
 		
 		if($.getUrlParam('imgCon')){
 			$(".work-details-tit").html(imgCon);
+			$(".full-screen-tit").html(imgCon);
 		}
 	});	
 	
