@@ -106,7 +106,7 @@ body{background-color: var(--bg-main);}
 .search-mobile{width: 100%;height: auto;display: flex;flex-wrap: wrap;justify-content: space-between;align-items: center;}
 .search-mobile div:first-child{display: flex;justify-content: flex-start;width: 100%;margin: 0 0 1rem 0;}
 .search-mobile div:last-child{position: relative;width: 100%;}
-.search-mobile input[name="search-mobile-txt"]{width: auto;height: 2.8rem;display: flex;flex-wrap: nowrap;justify-content: space-between;width: 80%;outline: 0;border: 0;padding: 0 15% 0 5%;border-radius: 0.2rem;}
+.search-mobile input[name="search-mobile-txt"]{width: auto;height: 2.8rem;display: flex;flex-wrap: nowrap;justify-content: space-between;width: 80%;outline: 0;border: 1px solid var(--bg-main);padding: 0 15% 0 5%;border-radius: 0.2rem;}
 .search-mobile input[name="search-mobile-btn"]{position: absolute;top: 0;right: 0;width: 2.8rem;height: 2.8rem;outline:none;border: 0;border-radius: 0 0.2rem 0.2rem 0;background-color: rgba(0, 0, 0, 0);}
 /* 记录 */
 .mobile-record{margin-top: 2rem;font-size: 0.875rem;color: var(--color-secondly);}
