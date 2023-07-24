@@ -118,6 +118,7 @@ $(document).ready(function(){
 	// PC搜索
 	// 实现居中
 	center($('.search-wrap'));
+	// 窗口大小发生变化时实时居中
 	$(window).resize(function(){
 		center($('.search-wrap'));
 	})
@@ -172,6 +173,7 @@ $(document).ready(function(){
 	// 全屏看图
 	// 实现居中
 	center($('.full-screen-img'));
+	// 窗口大小发生变化时实时居中
 	$(window).resize(function(){
 		center($('.full-screen-img'));
 		
@@ -256,6 +258,11 @@ $(document).ready(function(){
 	
 	// 分享弹窗
 	center($('.share-window'));
+	// 窗口大小发生变化时实时居中
+	$(window).resize(function(){
+		center($('.share-window'));
+	})
+	// 打开分享弹窗
 	$('.share').click(function(){
 		mask();
 		$('.share-window').fadeIn()
