@@ -227,17 +227,19 @@ $(document).ready(function(){
 	$('.nav-mobile-search').click(function(){
 		mask();
 		$('.search-mobile-wrap').css({"transform":"translateX(0)"});
-		$('.nav-wrap').css({"transform":"translateX(94%)","transition":"all 0.3s ease"});
+		// $('.nav-wrap').css({"transform":"translateX(94%)","transition":"all 0.3s ease"});	//transform translate导致z-index失效
+		$('.nav-wrap').css({"padding-left":"90.5%","transition":"all 0.3s ease"})
 		$('.content').css({"transform":"translateX(94%)","transition":"all 0.3s ease"});
 		$('.footer div').css({"transform":"translateX(94%)","transition":"all 0.3s ease"});
 		$('body').css({"overflow":"hidden"});
 	})
 	$('.search-mobile div svg').click(function(){
 		$(".mask").fadeOut(300);
-		// 关闭遮罩是允许窗口滚动
+		// 关闭遮罩允许窗口滚动
 		$(document).unbind("scroll.unable");
 		$('.search-mobile-wrap').css({"transform":"translateX(-100%)"})
-		$('.nav-wrap').css({"transform":"translateX(0)","transition":"all 0.3s ease"});
+		// $('.nav-wrap').css({"transform":"translateX(0)","transition":"all 0.3s ease"});	//transform translate导致z-index失效
+		$('.nav-wrap').css({"padding-left":"0%","transition":"all 0.3s ease"})
 		$('.content').css({"transform":"translateX(0)","transition":"all 0.3s ease"});
 		$('.footer div').css({"transform":"translateX(0)","transition":"all 0.3s ease"});
 		$('body').css({"overflow":"scroll"});
