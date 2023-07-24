@@ -23,12 +23,14 @@ $(document).ready(function(){
 	}
 	// 浅色模式样式
 	function light(){
-		document.documentElement.style.setProperty('--bg-main', "#ffffff");
+		document.documentElement.style.setProperty('--bg-main', "#f3f4f5");
+		document.documentElement.style.setProperty('--bg-secondly', "#ffffff");
 		document.documentElement.style.setProperty('--color-main', "#000000");
 	}
 	// 深色模式样式
 	function dark(){
 		document.documentElement.style.setProperty('--bg-main', "#171514");
+		document.documentElement.style.setProperty('--bg-secondly', "#232222");
 		document.documentElement.style.setProperty('--color-main', "#ffffff");
 	}
 	$(".switch").click(function(){

@@ -42,7 +42,7 @@ body{background-color: var(--bg-main);}
 .content-menu{display: flex;flex-wrap: nowrap;justify-content: space-between;}
 .content-menu:hover{color: var(--color-main);}
 .content-menu ul{display: flex;flex-wrap: nowrap;}
-.content-menu-item li{width: 4rem;text-align: center;line-height: 2.1rem;border-radius: 3px;color: var(--color-main);margin-right: 1rem;}
+.content-menu-item li{width: 4rem;text-align: center;line-height: 2.1rem;border-radius: 3px;color: #fff;margin-right: 1rem;}
 .content-menu-item li:not(.current-menu-item){background-color: var(--bg-less);}
 .current-menu-item{background-color: var(--bg-focus);}
 .content-menu-item li:hover{background-color: var(--bg-focus);}
@@ -64,7 +64,7 @@ body{background-color: var(--bg-main);}
 .content-lists-tit div:last-child{display: flex;align-items: center;justify-content: space-between;width: 28%;}
 .content-lists-wrap>i{width: 65px;margin-right: -0.7rem;}
 /* 翻页 */
-.pages{width: auto;max-width: 55%;display: flex;flex-wrap: wrap;margin: 4rem auto;color: var(--color-main);}
+.pages{width: auto;max-width: 55%;display: flex;flex-wrap: wrap;margin: 4rem auto;color: #fff;}
 .pages a{width: inherit;height: inherit;display: block;padding: 0.5rem 1rem;}
 .pages li{width: auto;margin: 0 auto;display: flex;justify-content: center;align-items: center;margin: 0.5rem auto;}
 .pages li:not(.current-pages){background-color: var(--bg-less);}
@@ -165,7 +165,7 @@ body{background-color: var(--bg-main);}
 	/* 内容 */
 	.content{width: 92%;}
 	.content-menu{margin-bottom: 1rem;}
-	.content-menu-item li{background-color: transparent;width: auto;position: relative;margin-right: 1.5rem;}
+	.content-menu-item li{background-color: transparent;width: auto;position: relative;margin-right: 1.5rem;color: var(--color-main);}
 	.content-menu-item li:not(.current-menu-item){background-color: transparent;color: var(--color-secondly);}
 	.current-menu-item::before{content: '';width: 100%;height: 3px;background-color: var(--bg-focus);bottom: -0.5rem;left: 0;position: absolute;}
 	/* 列表 */
