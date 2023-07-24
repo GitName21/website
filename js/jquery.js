@@ -111,6 +111,8 @@ $(document).ready(function(){
 		$('.content').css({"transform":"translateX(0)","transition":"all 0.3s ease"});
 		$('.footer div').css({"transform":"translateX(0)","transition":"all 0.3s ease"});
 		$('body').css({"overflow":"scroll"});
+		// 关闭分享
+		$('.share-window').css({"animation":"share-close 0.3s ease forwards"})
 	})
 	
 	// PC搜索
@@ -225,7 +227,7 @@ $(document).ready(function(){
 	}
 	
 	// 回到顶部
-	$('.footer div div:last-child').click(function(){
+	$('.footer div div div:last-child').click(function(){
 		$("html,body").finish().animate({"scrollTop":"0px"},900);
 	});
 	
@@ -252,4 +254,37 @@ $(document).ready(function(){
 		
 	})
 	
+	// 分享弹窗
+	center($('.share-window'));
+	$('.share').click(function(){
+		mask();
+		$('.share-window').fadeIn()
+		$('.share-window').css({"animation":"share 0.3s ease forwards"})
+	})
+	// 关闭分享弹窗
+	$('.share-window>div:last-child div:first-child').click(function(){
+		$(".mask").fadeOut(300);
+		$('.share-window').css({"animation":"share-close 0.3s ease forwards"})
+		
+		// 关闭遮罩允许窗口滚动
+		$(document).unbind("scroll.unable");
+	})
+	// 复制网址函数
+	function copyHref(copyCont){
+		var str = copyCont;
+		var $temp = $('<input>');
+		$('body').append($temp);
+		$temp.val(str).select();
+		document.execCommand('copy');
+		$temp.remove();
+	}
+	$('.share-window>div:last-child div:last-child').click(function(){
+		copyHref('https://gitname21.github.io/website/')
+		
+		$(".mask").fadeOut(300);
+		$('.share-window').css({"animation":"share-close 0.3s ease forwards"})
+		
+		// 关闭遮罩允许窗口滚动
+		$(document).unbind("scroll.unable");
+	})
 });

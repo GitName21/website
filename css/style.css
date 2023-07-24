@@ -86,6 +86,27 @@ body{background-color: var(--bg-main);}
 .search-wrap input[name="search"]{background-color: rgba(0, 0, 0, 0);width: 50rem;height: 5rem;border: 0px;outline: none;background-color: ;font-size: 1.625rem;color: var(--color-secondly);}
 .search-wrap input[name="search-sub"]{background-color: rgba(0, 0, 0, 0);width: 5rem;height: 5rem;border: 0px;outline: none;color: var(--color-main);font-size: 1.625rem;cursor: pointer;}
 .search-wrap label{position: absolute;font-size: 2rem;top: 1rem;color: var(--color-secondly);}
+/* 分享 */
+.share-window{width: 40rem;height: auto;background-color: var(--bg-secondly);position: fixed;display: none;z-index: 99;}
+.share-window div:first-child{display: flex;align-items: center;}
+.share-window div:first-child svg{margin: 1px 0.5rem 0 0;}
+/* 分享动画 */
+ @keyframes share{ 
+		0%{transform: scale(1);}
+		50%{transform: scale(1.3);}
+		100%{transform: scale(1);}
+	}
+ @keyframes share-close{
+		0%{transform: scale(1);}
+		50%{transform: scale(1.3);}
+		100%{transform: scale(0);}
+	}
+.share-window div{color: var(--color-main);}
+.share-window>div:first-child{line-height: 5rem;padding: 0 1rem;border-bottom: 1px solid var(--bg-less);}
+.share-window>div:nth-child(2){width: 100%;padding: 2rem 1rem;}
+.share-window>div:last-child{display: flex;flex-wrap: nowrap;justify-content: space-between;}
+.share-window>div:last-child div{display: flex;flex-wrap: nowrap;justify-content: center;align-items: center;line-height: 5rem;width: 50%;border-top: 1px solid var(--bg-less);cursor: pointer;}
+.share-window>div:last-child div:first-child{color: var(--color-secondly);}
 
 /* 图片详情页 */
 .work-details-wrap{width: auto;height: auto;margin: 0 0 2rem 0;display: flex;justify-content: ;flex-wrap: wrap;align-items: flex-start;}
@@ -187,6 +208,8 @@ body{background-color: var(--bg-main);}
 	/* 搜索 */
 	.search-wrap{width: 92%;}
 	.search-wrap input[name="search"]{background-color: rgba(0, 0, 0, 0);width: 100%;height: 5rem;border: 0px;outline: none;background-color: ;font-size: 1.625rem;color: var(--color-secondly);}
+	/* 分享 */
+	.share-window{width: 92%;height: auto;background-color: var(--bg-secondly);position: fixed;display: none;z-index: 99;}
 	/* 全屏看图 */
 	.full-screen-img{background-color: var(--bg-main);width:100%;}
 	.full-screen-img-tit{display: block;}
