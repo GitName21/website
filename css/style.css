@@ -12,7 +12,23 @@ body{background-color: var(--bg-main);}
 .nav-wrap{width: 70rem;height: 5rem;margin: 0 auto;display: flex;justify-content: space-between;align-items: center;color: var(--color-secondly);}
 .nav-mobile-search{display: none;}
 .nav-menu{width: 18%;display: flex;justify-content: space-between;}
-.nav-menu div:hover{color: var(--color-focus);}
+.nav-menu>div{position: relative;}
+.nav-level-item>div{display: flex;justify-content: space-between;flex-wrap: nowrap;border: 1px solid var(--bg-less);padding: 0.5rem 1rem;margin: 0.5rem 0;align-items: center;width: 4rem;}
+.nav-level-item>div>div:first-child{width: 1.5rem;height: 1.5rem;border-radius: 50%;overflow: hidden;}
+.nav-level-item>div>div:first-child img{width: 100%;height: 100%;}
+.nav-level-item>div>div:last-child{width:2rem;}
+.nav-level{position: absolute;width: 18rem;height: auto;background-color: var(--bg-secondly);top: 1.2rem;left: 0;z-index: 99;display: flex;justify-content: space-between;align-items: center;padding: 2rem;visibility: hidden;z-index: -1;opacity: 0;}
+.nav-level-line{width: 1px;height: 5rem;background-color: var(--bg-less);}
+.nav-level-rec{font-size: 0.75rem;line-height: 1.5rem;}
+.nav-level-rec li{margin: 0 0 0 0.8rem;}
+/* 二级菜单动画 */
+ @keyframes nav-level{ 
+		0%{display: none;opacity: 0;visibility: hidden;z-index: -1;top: 0rem;}
+		50%{opacity: 0.5;visibility: visible;z-index: 99;top: 1rem;}
+		100%{opacity: 1;visibility: visible;z-index: 99;top: 1.2rem;}
+	}
+.nav-menu>div:hover .nav-level{animation:nav-level 0.3s ease forwards;}
+.nav-menu>div>a:hover{color: var(--color-focus);}
 .nav-function{display: flex;justify-content: space-between;width: 18%;}
 .nav-function div{display: flex;align-items: center;cursor: pointer;}
 .nav-function>div:first-child{background-color: var(--bg-less);font-size: 0.875rem;padding: 0.5rem;border-radius: 100rem;}
@@ -188,6 +204,7 @@ body{background-color: var(--bg-main);}
 @media(max-width:767px){
 	.nav{margin-bottom: 2.375rem;}
 	.nav-wrap{width: 92%;}
+	.nav-level{display: none;}
 	.nav-mobile-search{display: flex;}
 	.nav-function{justify-content: flex-end;width: auto;}
 	.nav-function>div:first-child,.nav-function>div:nth-child(2){display: none;}
