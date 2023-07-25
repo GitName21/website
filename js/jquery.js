@@ -241,6 +241,7 @@ $(document).ready(function(){
 	
 	// 移动端搜索
 	$('.nav-mobile-search').click(function(){
+		$(".nav-more").css({"animation":"nav-more-close 0.5s ease forwards"})
 		mask();
 		$('.search-mobile-wrap').css({"transform":"translateX(0)"});
 		// $('.nav-wrap').css({"transform":"translateX(94%)","transition":"all 0.3s ease"});	//transform translate导致z-index失效
@@ -323,6 +324,7 @@ $(document).ready(function(){
 		center($('.statement'));
 	})
 	$('.statement-btn').click(function(){
+		$(".nav-more").css({"animation":"nav-more-close 0.5s ease forwards"})
 		mask();
 		$('.statement').fadeIn()
 		$('.statement').css({"animation":"share 0.3s ease forwards"})
