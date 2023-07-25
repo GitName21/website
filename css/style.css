@@ -195,7 +195,7 @@ body{background-color: var(--bg-main);}
 .article-lists-cont li img{width: 100%;height: 100%;}
 .article-lists-tit{position: absolute;top: 0;width: inherit;height: inherit;background-color: rgba(0, 0, 0, 0.6);width: 100%;height: 100%;display: flex;align-items: center;justify-content: center;flex-wrap: wrap;}
 .article-lists-tit div{width: 100%;height: auto;text-align: center;}
-.article-lists-tit div p:first-child{font-size: 1.2rem;color: var(--color-main);}
+.article-lists-tit div p:first-child{font-size: 1.2rem;color: #fff;}
 .article-lists-tit div p:last-child{font-size: 1.2rem;color: var(--color-secondly);margin-top: 1.2rem;}
 .article-lists-time{position: absolute;right: 2rem;bottom: 1rem;color: var(--color-secondly);display: flex;align-items: center;line-height: 1rem;flex-wrap: nowrap;}
 .article-lists-time span{display: flex;align-items: center;}

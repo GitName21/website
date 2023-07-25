@@ -241,6 +241,7 @@ $(document).ready(function(){
 	
 	// 移动端搜索
 	$('.nav-mobile-search').click(function(){
+		// 关闭右侧二级导航
 		$(".nav-more").css({"animation":"nav-more-close 0.5s ease forwards"})
 		mask();
 		$('.search-mobile-wrap').css({"transform":"translateX(0)"});
