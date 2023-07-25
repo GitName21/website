@@ -85,6 +85,7 @@ $(document).ready(function(){
 	// 打开遮罩
 	function mask(){
 		$(".mask").fadeIn(300)
+		$('body').css({"overflow":"hidden"})
 		// 打开遮罩时禁止窗口滚动
 		var top = $(document).scrollTop();
 		// 禁止窗口滚动
