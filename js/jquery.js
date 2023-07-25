@@ -93,8 +93,11 @@ $(document).ready(function(){
 			$(document).scrollTop(top);
 		})
 		
-		$(".mask").css({"top":top});
+		// $(".mask").css({"top":top}); //如何定位设置为absolute，则添加这个属性，保证.mack处于当前屏，fixed固定定位则不用
 	}
+	$(document).scroll(function() {
+	  $(".mask").css({"top":'0'});
+	});
 	// 关闭遮罩
 	$(".mask").click(function(){
 		$(".mask").fadeOut(300);
@@ -275,6 +278,7 @@ $(document).ready(function(){
 	$('.share-window>div:last-child div:first-child').click(function(){
 		$(".mask").fadeOut(300);
 		$('.share-window').css({"animation":"share-close 0.3s ease forwards"})
+		$('body').css({"overflow":"scroll"})
 		
 		// 关闭遮罩允许窗口滚动
 		$(document).unbind("scroll.unable");

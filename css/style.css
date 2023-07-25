@@ -80,7 +80,7 @@ body{background-color: var(--bg-main);}
 .footer>div>div:first-child div{margin: 3rem;}
 .group-line{width: 100%;height: 1px;background-color: var(--bg-less);margin-bottom: 2rem;}
 /* 遮罩 */
-.mask{width: 100%;height: 100%;background-color: rgba(0, 0, 0, 0.6);position: absolute;top: 0;left: 0;display: none;z-index: 99;}
+.mask{width: 100%;height: 100%;background-color: rgba(0, 0, 0, 0.6);position: fixed;top: 0;left: 0;display: none;z-index: 99;}
 .search-wrap{position: absolute;display: none;border-bottom: 1px solid #fff;z-index: 99;}
 /* 搜索 */
 .search-wrap input[name="search"]{background-color: rgba(0, 0, 0, 0);width: 50rem;height: 5rem;border: 0px;outline: none;background-color: ;font-size: 1.625rem;color: var(--color-secondly);}
