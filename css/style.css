@@ -40,6 +40,7 @@ body{background-color: var(--bg-main);}
 .nav-more{position: absolute;right: 0;background-color: var(--bg-secondly);bottom: -20rem;width: 13.625rem;padding: 1rem 2rem;opacity: 0;visibility: hidden;z-index: -1;height: auto;}
 .nav-more::before{width: 0;height: 0;border-bottom: 8px solid var(--bg-secondly);border-right: 8px solid transparent;border-left: 8px solid transparent;content: '';top: -0.5rem;position: absolute;right: 1rem;}
 .nav-more li{margin: 1.5rem 0;width: 100%;height: auto;}
+.nav-more li:last-child{display: none;}
 .nav-more li a{display: flex;flex-wrap: nowrap;justify-content: space-between;}
 .switch{width: 3.4rem;height: 1.5rem;border: 1px solid #00BAAD;border-radius: 10rem;position: relative;}
 .switch div{position: absolute;width: 1rem;height: 1rem;border-radius: 100%;background-color: #E5E5E5;left: 0.3rem;}
@@ -213,6 +214,18 @@ body{background-color: var(--bg-main);}
 .article-group-line::before{left: 0;top: 50%;}
 .article-group-line::after{right: 0;top: 50%;}
 .like-btn{width: 4.2rem;height: 4.2rem;border-radius: 50%;background-color: var(--bg-secondly);margin: 0 auto;display: flex;justify-content: center;align-items: center;cursor: pointer;}
+.like-btn:hover{background-color: var(--bg-focus);transition: all 0.3s ease;}
+/* 点赞动画 */
+ @keyframes like{
+		0%{transform: scale(1);}
+		50%{transform: scale(1.3);}
+		100%{transform: scale(1);}
+	}
+ @keyframes like-close{
+		0%{transform: scale(1);}
+		50%{transform: scale(1.3);}
+		100%{transform: scale(0);}
+	}
 .rec{width: 100%;height: auto;}
 .rec li{position: relative;margin-bottom: 0.5rem;overflow: hidden;}
 .rec li:not(.rec-top){width: 100%;height: 8rem;}
@@ -231,6 +244,19 @@ body{background-color: var(--bg-main);}
 	.nav-function>div:first-child,.nav-function>div:nth-child(2){display: none;}
 	.nav-menu{width: 48%;}
 	.current-menu::before{display: none;}
+	/* 右侧二级 */
+	.nav-more{bottom: -23rem;}
+	.nav-more li:last-child{display: block;}
+	/* 二级菜单动画 */
+	 @keyframes nav-more{ 
+			0%{display: none;opacity: 0;visibility: hidden;z-index: -1;bottom: -18rem;}
+			50%{opacity: 1;visibility: visible;z-index: 99;bottom: -27rem;}
+			100%{opacity: 1;visibility: visible;z-index: 99;bottom: -23rem;}
+		}
+	 @keyframes nav-more-close{ 
+			from{opacity: 1;visibility: visible;z-index: 1;bottom: -23rem;}
+			to{display: none;opacity: 0;visibility: hidden;z-index: -1;bottom: -18rem;}
+		}
 	/* 内容 */
 	.content{width: 92%;}
 	.content-menu{margin-bottom: 1rem;}
