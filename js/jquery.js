@@ -295,6 +295,8 @@ $(document).ready(function(){
 	$('.share-window>div:last-child div:last-child').click(function(){
 		copyHref('https://gitname21.github.io/website/')
 		
+		$('body').css({"overflow-y":"scroll"});
+		
 		$(".mask").fadeOut(300);
 		$('.share-window').css({"animation":"share-close 0.3s ease forwards"})
 		
@@ -312,5 +314,25 @@ $(document).ready(function(){
 		mask();
 		$('.qr-code').fadeIn()
 		$('.qr-code').css({"animation":"share 0.3s ease forwards"})
+	})
+	
+	// 网站声明
+	center($('.statement'));
+	// 窗口大小发生变化时实时居中
+	$(window).resize(function(){
+		center($('.statement'));
+	})
+	$('.statement-btn').click(function(){
+		mask();
+		$('.statement').fadeIn()
+		$('.statement').css({"animation":"share 0.3s ease forwards"})
+	})
+	$('.statement div:last-child').click(function(){
+		$(".mask").fadeOut(300);
+		$('.statement').css({"animation":"share-close 0.3s ease forwards"})
+		
+		// 关闭遮罩允许窗口滚动
+		$(document).unbind("scroll.unable");
+		$('body').css({"overflow-y":"scroll"});
 	})
 });

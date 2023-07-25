@@ -110,6 +110,12 @@ body{background-color: var(--bg-main);}
 /* 二维码 */
 .qr-code{position: fixed;width: 20rem;height: 20rem;z-index: 99;display: none;}
 .qr-code img{position: fixed;width: inherit;height: inherit;}
+/* 声明 */
+.statement{width: 28rem;height: auto;position: fixed;z-index: 99;background-color: var(--bg-secondly);padding: 2rem;display: none;}
+.statement div:first-child{color: var(--color-main);text-align: center;margin: 0 0 1.5rem 0;font-size: 1.75rem;}
+.statement div p{margin-bottom: 1rem;font-size: 0.875rem;}
+.statement div:last-child{color: #fff;text-align: center;line-height:3rem;background-color: var(--bg-focus);margin: 2rem 0 0 0;cursor: pointer;}
+.statement-cont{color: var(--color-secondly);}
 
 /* 图片详情页 */
 .work-details-wrap{width: auto;height: auto;margin: 0 0 2rem 0;display: flex;justify-content: ;flex-wrap: wrap;align-items: flex-start;}
@@ -215,6 +221,10 @@ body{background-color: var(--bg-main);}
 	.share-window{width: 92%;height: auto;background-color: var(--bg-secondly);position: fixed;display: none;z-index: 99;}
 	/* 二维码 */
 	.qr-code{width: 15rem;height: 15rem;}
+	/* 声明 */
+	.statement{width: 88%;padding: 6% 2%;}
+	.statement div:first-child{font-size: 1.2rem;}
+	.statement div p{font-size: 0.75rem;}
 	/* 全屏看图 */
 	.full-screen-img{background-color: var(--bg-main);width:100%;}
 	.full-screen-img-tit{display: block;}
