@@ -114,7 +114,7 @@ $(document).ready(function(){
 		$('.nav-wrap').css({"padding-left":"0%","transition":"all 0.3s ease"})
 		$('.content').css({"transform":"translateX(0)","transition":"all 0.3s ease"});
 		$('.footer div').css({"transform":"translateX(0)","transition":"all 0.3s ease"});
-		$('body').css({"overflow":"scroll"});
+		$('body').css({"overflow-y":"scroll"});
 		// 关闭分享
 		$('.share-window').css({"animation":"share-close 0.3s ease forwards"})
 		// 关闭二维码
@@ -278,7 +278,7 @@ $(document).ready(function(){
 	$('.share-window>div:last-child div:first-child').click(function(){
 		$(".mask").fadeOut(300);
 		$('.share-window').css({"animation":"share-close 0.3s ease forwards"})
-		$('body').css({"overflow":"scroll"})
+		$('body').css({"overflow-y":"scroll"})
 		
 		// 关闭遮罩允许窗口滚动
 		$(document).unbind("scroll.unable");
