@@ -213,7 +213,7 @@ body{background-color: var(--bg-main);}
 .article-group-line::before{left: 0;top: 50%;}
 .article-group-line::after{right: 0;top: 50%;}
 .like-btn{width: 4.2rem;height: 4.2rem;border-radius: 50%;background-color: var(--bg-secondly);margin: 0 auto;display: flex;justify-content: center;align-items: center;cursor: pointer;}
-.rec{width: 100%;height: 300px;}
+.rec{width: 100%;height: auto;}
 .rec li{position: relative;margin-bottom: 0.5rem;overflow: hidden;}
 .rec li:not(.rec-top){width: 100%;height: 8rem;}
 .rec img{width: 100%;height: auto;}
