@@ -107,6 +107,9 @@ body{background-color: var(--bg-main);}
 .share-window>div:last-child{display: flex;flex-wrap: nowrap;justify-content: space-between;}
 .share-window>div:last-child div{display: flex;flex-wrap: nowrap;justify-content: center;align-items: center;line-height: 5rem;width: 50%;border-top: 1px solid var(--bg-less);cursor: pointer;}
 .share-window>div:last-child div:first-child{color: var(--color-secondly);}
+/* 二维码 */
+.qr-code{position: fixed;width: 20rem;height: 20rem;z-index: 99;display: none;}
+.qr-code img{position: fixed;width: inherit;height: inherit;}
 
 /* 图片详情页 */
 .work-details-wrap{width: auto;height: auto;margin: 0 0 2rem 0;display: flex;justify-content: ;flex-wrap: wrap;align-items: flex-start;}
