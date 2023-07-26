@@ -342,12 +342,12 @@ $(document).ready(function(){
 	// 工具栏固定
 	var divTOP = $('.content-menu').offset().top;
 	$(document).scroll(function(){
-		var divWidth = $('.content-menu').outerWidth();
+		var divWidth = $('.content').outerWidth();
 		if($(document).scrollTop() >= divTOP){
-			$('.content-menu').css({"position":"fixed","top":"0","z-index":"99","width":divWidth,"background-color":"var(--bg-main)","padding":"0.5rem 0","transition":"all 0.3s ease"})
+			$('.content-menu').css({"position":"fixed","top":"0","z-index":"99","width":divWidth,"background-color":"var(--bg-main)","padding":"0.5rem 0","transition":"all 0.5s ease"})
 			console.log(divTOP)
 		}else{
-			$('.content-menu').css({"position":"static","z-index":"1","width":"100%","background-color":"transparent","padding":"0","transition":"all 0.3s ease"})
+			$('.content-menu').css({"position":"static","z-index":"1","width":"auto","background-color":"transparent","padding":"0","transition":"all 0.5s ease"})
 		}
 	})
 	
