@@ -341,11 +341,8 @@ $(document).ready(function(){
 	
 	// 工具栏固定
 	var divTOP = $('.content-menu').offset().top;
-	// var divHEIGHT = $('.content-menu').outerHeight();
-	var divWidth = $('.content-menu').outerWidth();
-	// var dis = divTOP+divHEIGHT
-	// console.log(dis)
 	$(document).scroll(function(){
+		var divWidth = $('.content-menu').outerWidth();
 		if($(document).scrollTop() >= divTOP){
 			$('.content-menu').css({"position":"fixed","top":"0","z-index":"99","width":divWidth,"background-color":"var(--bg-main)","padding":"0.5rem 0","transition":"all 0.3s ease"})
 			console.log(divTOP)
