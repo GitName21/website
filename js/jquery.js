@@ -338,4 +338,20 @@ $(document).ready(function(){
 		$(document).unbind("scroll.unable");
 		$('body').css({"overflow-y":"scroll"});
 	})
+	
+	// 工具栏固定
+	var divTOP = $('.content-menu').offset().top;
+	// var divHEIGHT = $('.content-menu').outerHeight();
+	var divWidth = $('.content-menu').outerWidth();
+	// var dis = divTOP+divHEIGHT
+	// console.log(dis)
+	$(document).scroll(function(){
+		if($(document).scrollTop() >= divTOP){
+			$('.content-menu').css({"position":"fixed","top":"0","z-index":"99","width":divWidth,"background-color":"var(--bg-main)","padding":"0.5rem 0","transition":"all 0.3s ease"})
+			console.log(divTOP)
+		}else{
+			$('.content-menu').css({"position":"static","z-index":"1","width":"100%","background-color":"transparent","padding":"0","transition":"all 0.3s ease"})
+		}
+	})
+	
 });
