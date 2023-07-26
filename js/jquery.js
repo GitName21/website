@@ -112,7 +112,8 @@ $(document).ready(function(){
 		$('.search-mobile-wrap').css({"transform":"translateX(-100%)"})
 		// $('.nav-wrap').css({"transform":"translateX(0)","transition":"all 0.3s ease"});
 		$('.nav-wrap').css({"padding-left":"0%","transition":"all 0.3s ease"})
-		$('.content').css({"transform":"translateX(0)","transition":"all 0.3s ease"});
+		// $('.content').css({"transform":"translateX(0)","transition":"all 0.3s ease"});
+		$('.content').css({"padding-left":"0","transition":"all 0.3s ease"});
 		$('.footer div').css({"transform":"translateX(0)","transition":"all 0.3s ease"});
 		$('body').css({"overflow-y":"scroll"});
 		// 关闭分享
