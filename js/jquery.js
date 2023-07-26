@@ -339,13 +339,15 @@ $(document).ready(function(){
 		$('body').css({"overflow-y":"scroll"});
 	})
 	
-	// 工具栏固定
-	var divTOP = $('.content-menu').offset().top;
+	// 首页工具栏固定
+	if($('.content-menu').is('.content-menu')){
+		var divTOP = $('.content-menu').offset().top;
+	}	//如果不写判断，其它页面没有找到.content-menu类时会报错，并且无法继续执行
+	
 	$(document).scroll(function(){
 		var divWidth = $('.content').outerWidth();
 		if($(document).scrollTop() >= divTOP){
 			$('.content-menu').css({"position":"fixed","top":"0","z-index":"99","width":divWidth,"background-color":"var(--bg-main)","padding":"0.5rem 0","transition":"all 0.5s ease"})
-			console.log(divTOP)
 		}else{
 			$('.content-menu').css({"position":"static","z-index":"1","width":"auto","background-color":"transparent","padding":"0","transition":"all 0.5s ease"})
 		}
