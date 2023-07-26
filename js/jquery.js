@@ -247,7 +247,8 @@ $(document).ready(function(){
 		$('.search-mobile-wrap').css({"transform":"translateX(0)"});
 		// $('.nav-wrap').css({"transform":"translateX(94%)","transition":"all 0.3s ease"});	//transform translate导致z-index失效
 		$('.nav-wrap').css({"padding-left":"90.5%","transition":"all 0.3s ease"})
-		$('.content').css({"transform":"translateX(94%)","transition":"all 0.3s ease"});
+		// $('.content').css({"transform":"translateX(94%)","transition":"all 0.3s ease"});		//transform translate导致其所有子元素fixed失效
+		$('.content').css({"padding-left":"90.5%","transition":"all 0.3s ease"});
 		$('.footer div').css({"transform":"translateX(94%)","transition":"all 0.3s ease"});
 		$('body').css({"overflow":"hidden"});
 	})
@@ -258,7 +259,8 @@ $(document).ready(function(){
 		$('.search-mobile-wrap').css({"transform":"translateX(-100%)"})
 		// $('.nav-wrap').css({"transform":"translateX(0)","transition":"all 0.3s ease"});	//transform translate导致z-index失效
 		$('.nav-wrap').css({"padding-left":"0%","transition":"all 0.3s ease"})
-		$('.content').css({"transform":"translateX(0)","transition":"all 0.3s ease"});
+		// $('.content').css({"transform":"translateX(0)","transition":"all 0.3s ease"});
+		$('.content').css({"padding-left":"0","transition":"all 0.3s ease"});
 		$('.footer div').css({"transform":"translateX(0)","transition":"all 0.3s ease"});
 		$('body').css({"overflow":"scroll"});
 		
