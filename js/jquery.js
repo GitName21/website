@@ -372,4 +372,43 @@ $(document).ready(function(){
 		$(document).unbind("scroll.unable");
 		$('body').css({"overflow-y":"scroll"});
 	})
+	
+	// tab焦点
+	// 获取链接
+	$(function () {
+		(function ($) {
+			$.getUrlParam = function (name) {
+				var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)");
+				var r = decodeURI(window.location.search).substr(1).match(reg); //decodeURI(window.location.search),get参数中存在中文，用decodeURI转码，避免乱码
+				if (r != null) return unescape(r[2]); return null;
+			}
+		})(jQuery);
+		var type = $.getUrlParam('type');
+
+		var x = $(".content-menu-item li").toArray();
+		
+		var array=new Array();//声明一个新的数组
+		var list1=$(".content-menu-item").children().each(function (index,element) {//遍历每个对象
+		array.push($(this).text());//往数组中存入值
+		});
+		console.log(array);
+		
+		var t = array.indexOf(type)
+		
+		if(t == "-1"){
+			$(".content-menu-item li").eq(0).addClass("current-menu-item");
+		}else{
+			$(".content-menu-item li").eq(t).addClass("current-menu-item");
+		}
+		console.log(t)
+		
+		
+		// for (i=0;i<x.length;i++){
+		// 	$(".content-menu-item li").eq[i].addClass("current-menu-item");
+			
+		// 	var t = x[i].indexOf(type)
+		// 	console.log(t)
+		// }
+	});	
+	
 });
