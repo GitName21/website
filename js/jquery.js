@@ -356,4 +356,11 @@ $(document).ready(function(){
 		}
 	})
 	
+	// 友情链接
+	$('.friendship-btn').click(function(){
+		$('.friendship-wrap').css({"transform":"translateX(0)"})
+	})
+	$('.friendship-wrap div svg').click(function(){
+		$('.friendship-wrap').css({"transform":"translateX(100%)"})
+	})
 });

@@ -134,6 +134,19 @@ body{background-color: var(--bg-main);}
 .statement div p{margin-bottom: 1rem;font-size: 0.875rem;}
 .statement div:last-child{color: #fff;text-align: center;line-height:3rem;background-color: var(--bg-focus);margin: 2rem 0 0 0;cursor: pointer;}
 .statement-cont{color: var(--color-secondly);}
+/* 友情链接 */
+.friendship-wrap{width: 20rem;height: 200%;background-color: var(--bg-main);position: fixed;right: 0;top: 0;padding: 0 2rem 2rem 2rem;color: var(--color-main);z-index: 99;transform: translateX(100%);transition: all 0.5s ease;}
+.friendship-wrap>div{width: 100%;height: 5rem;line-height: 5rem;display: flex;flex-wrap: nowrap;align-items: center;}
+.friendship-wrap>div>svg{margin-right: 0.5rem;cursor: pointer;}
+.friendship-wrap ul{width: 100%;display: flex;justify-content: space-between;flex-wrap: wrap;}
+.friendship-wrap ul li{width: 9.5rem;height: 9.5rem;text-align: center;line-height: 9.5rem;background-color: #212121;margin-bottom: 1rem;}
+.friendship-wrap ul li:first-child{background: linear-gradient(90deg, rgba(22, 217, 227, 1) 0%, rgba(48, 199, 236, 1) 47%, rgba(70, 174, 247, 1) 100%)}
+.friendship-wrap ul li:nth-child(2){background: linear-gradient(90deg, rgba(183, 248, 219, 1) 0%, rgba(80, 167, 194, 1) 100%)}
+.friendship-wrap ul li:nth-child(3){background: linear-gradient(180deg, rgba(0, 205, 172, 1) 0%, rgba(141, 218, 213, 1) 100%)}
+.friendship-wrap ul li:nth-child(4){background: linear-gradient(180deg, rgba(247, 112, 98, 1) 0%, rgba(254, 81, 150, 1) 100%)}
+.friendship-wrap ul li:nth-child(5){background: linear-gradient(180deg, rgba(0, 198, 251, 1) 0%, rgba(0, 91, 234, 1) 100%)}
+.friendship-wrap ul li:last-child{background: linear-gradient(90deg, rgba(134, 143, 150, 1) 0%, rgba(89, 97, 100, 1) 100%)}
+
 
 /* 图片详情页 */
 .work-details-wrap{width: auto;height: auto;margin: 0 0 2rem 0;display: flex;justify-content: ;flex-wrap: wrap;align-items: flex-start;}
@@ -284,6 +297,9 @@ body{background-color: var(--bg-main);}
 	.statement{width: 84%;padding: 6% 4% 4% 4%;}
 	.statement div:first-child{font-size: 1.2rem;}
 	.statement div p{font-size: 0.75rem;}
+	/* 友情链接 */
+	.friendship-wrap{width: 92%;padding: 0 3% 3% 3%;}
+	.friendship-wrap ul li{width: 10.7rem;height: 10.7rem;line-height: 10.7rem;}
 	/* 全屏看图 */
 	.full-screen-img{background-color: var(--bg-main);width:100%;}
 	.full-screen-img-tit{display: block;}
