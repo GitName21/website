@@ -120,6 +120,8 @@ $(document).ready(function(){
 		$('.share-window').css({"animation":"share-close 0.3s ease forwards"})
 		// 关闭二维码
 		$('.qr-code').css({"animation":"share-close 0.3s ease forwards"})
+		// 关闭友情链接
+		$('.friendship-wrap').css({"transform":"translateX(100%)"});
 	})
 	
 	// PC搜索
@@ -358,9 +360,16 @@ $(document).ready(function(){
 	
 	// 友情链接
 	$('.friendship-btn').click(function(){
-		$('.friendship-wrap').css({"transform":"translateX(0)"})
+		mask();
+		$('.friendship-wrap').css({"transform":"translateX(0)"});
+		$(".nav-more").css({"animation":"nav-more-close 0.5s ease forwards"});
 	})
 	$('.friendship-wrap div svg').click(function(){
-		$('.friendship-wrap').css({"transform":"translateX(100%)"})
+		$('.friendship-wrap').css({"transform":"translateX(100%)"});
+		
+		$(".mask").fadeOut(300);
+		// 关闭遮罩允许窗口滚动
+		$(document).unbind("scroll.unable");
+		$('body').css({"overflow-y":"scroll"});
 	})
 });
