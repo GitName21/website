@@ -299,7 +299,7 @@ body{background-color: var(--bg-main);}
 	.statement div p{font-size: 0.75rem;}
 	/* 友情链接 */
 	.friendship-wrap{width: 94%;padding: 0 3% 3% 3%;}
-	.friendship-wrap ul li{width: 10.7rem;height: 10.7rem;line-height: 10.7rem;}
+	.friendship-wrap ul li{width: 11rem;height: 11rem;line-height: 11rem;}
 	/* 全屏看图 */
 	.full-screen-img{background-color: var(--bg-main);width:100%;}
 	.full-screen-img-tit{display: block;}
