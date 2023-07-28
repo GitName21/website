@@ -348,4 +348,5 @@ textarea[name="feedback-cont"]{width: 96%;height: 6.25rem;background-color: rgba
 	.leave-word-none{display: none;}
 	.leave-word-tit,.back{display: block;}
 	.leave-word-tit{justify-content: center;width: 80%;text-align: center;}
+	.back{width:2rem;}
 }
