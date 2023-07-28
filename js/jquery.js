@@ -122,6 +122,8 @@ $(document).ready(function(){
 		$('.qr-code').css({"animation":"share-close 0.5s ease forwards"})
 		// 关闭友情链接
 		$('.friendship-wrap').css({"transform":"translateX(100%)"});
+		// 关闭反馈
+		$('.feedback').css({"animation":"share-close 0.5s ease forwards"})
 	})
 	
 	// PC搜索
@@ -404,18 +406,33 @@ $(document).ready(function(){
 	});
 	
 	// 时间获取
-	    var myDate = new Date;
-	    var year = myDate.getFullYear(); //获取当前年
-	    var mon = myDate.getMonth() + 1; //获取当前月
-	    var date = myDate.getDate(); //获取当前日
-	    var h = myDate.getHours();//获取当前小时数(0-23)
-	    var m = myDate.getMinutes();//获取当前分钟数(0-59)
-	    var s = myDate.getSeconds();//获取当前秒
-	    var week = myDate.getDay();
-	    var weeks = ["星期日", "星期一", "星期二", "星期三", "星期四", "星期五", "星期六"];
-	    console.log(year, mon, date, weeks[week])
-	    $(".week").html(weeks[week]);
-	    $(".date").html(mon + '月' + date + ',' + year);
-	    $(".time span:first-child").html(h + '点' + m + '分');
-
+	var myDate = new Date;
+	var year = myDate.getFullYear(); //获取当前年
+	var mon = myDate.getMonth() + 1; //获取当前月
+	var date = myDate.getDate(); //获取当前日
+	var h = myDate.getHours();//获取当前小时数(0-23)
+	var m = myDate.getMinutes();//获取当前分钟数(0-59)
+	var s = myDate.getSeconds();//获取当前秒
+	var week = myDate.getDay();
+	var weeks = ["星期日", "星期一", "星期二", "星期三", "星期四", "星期五", "星期六"];
+	console.log(year, mon, date, weeks[week])
+	$(".week").html(weeks[week]);
+	$(".date").html(mon + '月' + date + ',' + year);
+	$(".time span:first-child").html(h + '点' + m + '分');
+	
+	// 反馈
+	center($('.feedback'));
+	// 窗口大小发生变化时实时居中
+	$(window).resize(function(){
+		center($('.feedback'));
+	})
+	$('.feedback-btn').click(function(){
+		mask();
+		$('.feedback').fadeIn()
+		$('.feedback').css({"animation":"share 0.5s ease forwards"})
+	})
+	$('.feedback-btn-form div:first-child').click(function(){
+		$(".mask").fadeOut(300);
+		$('.feedback').css({"animation":"share-close 0.5s ease forwards"})
+	})
 });
