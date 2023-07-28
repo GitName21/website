@@ -111,15 +111,15 @@ $(document).ready(function(){
 		// 关闭移动端搜索
 		$('.search-mobile-wrap').css({"transform":"translateX(-100%)"})
 		// $('.nav-wrap').css({"transform":"translateX(0)","transition":"all 0.3s ease"});
-		$('.nav-wrap').css({"padding-left":"0%","transition":"all 0.3s ease"})
+		$('.nav-wrap').css({"padding-left":"0%","transition":"all 0.5s ease"})
 		// $('.content').css({"transform":"translateX(0)","transition":"all 0.3s ease"});
-		$('.content').css({"padding-left":"0","transition":"all 0.3s ease"});
-		$('.footer div').css({"transform":"translateX(0)","transition":"all 0.3s ease"});
+		$('.content').css({"padding-left":"0","transition":"all 0.5s ease"});
+		$('.footer div').css({"transform":"translateX(0)","transition":"all 0.5s ease"});
 		$('body').css({"overflow-y":"scroll"});
 		// 关闭分享
-		$('.share-window').css({"animation":"share-close 0.3s ease forwards"})
+		$('.share-window').css({"animation":"share-close 0.5s ease forwards"})
 		// 关闭二维码
-		$('.qr-code').css({"animation":"share-close 0.3s ease forwards"})
+		$('.qr-code').css({"animation":"share-close 0.5s ease forwards"})
 		// 关闭友情链接
 		$('.friendship-wrap').css({"transform":"translateX(100%)"});
 	})
@@ -249,10 +249,10 @@ $(document).ready(function(){
 		mask();
 		$('.search-mobile-wrap').css({"transform":"translateX(0)"});
 		// $('.nav-wrap').css({"transform":"translateX(94%)","transition":"all 0.3s ease"});	//transform translate导致z-index失效
-		$('.nav-wrap').css({"padding-left":"90.5%","transition":"all 0.3s ease"})
+		$('.nav-wrap').css({"padding-left":"90.5%","transition":"all 0.5s ease"})
 		// $('.content').css({"transform":"translateX(94%)","transition":"all 0.3s ease"});		//transform translate导致其所有子元素fixed失效
-		$('.content').css({"padding-left":"90.5%","transition":"all 0.3s ease"});
-		$('.footer div').css({"transform":"translateX(94%)","transition":"all 0.3s ease"});
+		$('.content').css({"padding-left":"90.5%","transition":"all 0.5s ease"});
+		$('.footer div').css({"transform":"translateX(94%)","transition":"all 0.5s ease"});
 		$('body').css({"overflow":"hidden"});
 	})
 	$('.search-mobile div svg').click(function(){
@@ -261,10 +261,10 @@ $(document).ready(function(){
 		$(document).unbind("scroll.unable");
 		$('.search-mobile-wrap').css({"transform":"translateX(-100%)"})
 		// $('.nav-wrap').css({"transform":"translateX(0)","transition":"all 0.3s ease"});	//transform translate导致z-index失效
-		$('.nav-wrap').css({"padding-left":"0%","transition":"all 0.3s ease"})
+		$('.nav-wrap').css({"padding-left":"0%","transition":"all 0.5s ease"})
 		// $('.content').css({"transform":"translateX(0)","transition":"all 0.3s ease"});
-		$('.content').css({"padding-left":"0","transition":"all 0.3s ease"});
-		$('.footer div').css({"transform":"translateX(0)","transition":"all 0.3s ease"});
+		$('.content').css({"padding-left":"0","transition":"all 0.5s ease"});
+		$('.footer div').css({"transform":"translateX(0)","transition":"all 0.5s ease"});
 		$('body').css({"overflow":"scroll"});
 		
 	})
@@ -279,12 +279,12 @@ $(document).ready(function(){
 	$('.share').click(function(){
 		mask();
 		$('.share-window').fadeIn()
-		$('.share-window').css({"animation":"share 0.3s ease forwards"})
+		$('.share-window').css({"animation":"share 0.5s ease forwards"})
 	})
 	// 关闭分享弹窗
 	$('.share-window>div:last-child div:first-child').click(function(){
 		$(".mask").fadeOut(300);
-		$('.share-window').css({"animation":"share-close 0.3s ease forwards"})
+		$('.share-window').css({"animation":"share-close 0.5s ease forwards"})
 		$('body').css({"overflow-y":"scroll"})
 		
 		// 关闭遮罩允许窗口滚动
@@ -320,7 +320,7 @@ $(document).ready(function(){
 	$('.qr-code-btn').click(function(){
 		mask();
 		$('.qr-code').fadeIn()
-		$('.qr-code').css({"animation":"share 0.3s ease forwards"})
+		$('.qr-code').css({"animation":"share 0.5s ease forwards"})
 	})
 	
 	// 网站声明
@@ -333,11 +333,11 @@ $(document).ready(function(){
 		$(".nav-more").css({"animation":"nav-more-close 0.5s ease forwards"})
 		mask();
 		$('.statement').fadeIn()
-		$('.statement').css({"animation":"share 0.3s ease forwards"})
+		$('.statement').css({"animation":"share 0.5s ease forwards"})
 	})
 	$('.statement div:last-child').click(function(){
 		$(".mask").fadeOut(300);
-		$('.statement').css({"animation":"share-close 0.3s ease forwards"})
+		$('.statement').css({"animation":"share-close 0.5s ease forwards"})
 		
 		// 关闭遮罩允许窗口滚动
 		$(document).unbind("scroll.unable");
