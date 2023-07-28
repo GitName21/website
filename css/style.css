@@ -151,13 +151,15 @@ body{background-color: var(--bg-main);}
 .feedback>div:first-child{font-size: ;margin-bottom: 1rem;}
 .feedback-input>div:first-child{font-size: 0.875rem;}
 .feedback-input{margin-bottom: 1rem;}
-input[name="feedback-text"]{width: 96%;height: 2.8rem;background-color: rgba(0, 0, 0, 0);outline: none;border: 1px solid var(--boder);margin: 0.5rem 0;padding: 2%;color: #fff;}
-textarea[name="feedback-cont"]{width: 96%;height: 6.25rem;background-color: rgba(0, 0, 0, 0);outline: none;border: 1px solid var(--boder);margin: 0.5rem 0;resize: none;padding: 2%;color: #fff;}
+input[name="feedback-text"]{width: 96%;height: 2.8rem;background-color: rgba(0, 0, 0, 0);outline: none;border: 1px solid var(--boder);margin: 0.5rem 0;padding: 2%;color: var(--color-main);}
+textarea[name="feedback-cont"]{width: 96%;height: 6.25rem;background-color: rgba(0, 0, 0, 0);outline: none;border: 1px solid var(--boder);margin: 0.5rem 0;resize: none;padding: 2%;color: var(--color-main);}
 .feedback-hint{font-size: 0.75rem;display: flex;flex-wrap: nowrap;align-items: center;color: var(--color-focus);}
 .feedback-hint span:first-child{width: 0.5rem;height: 0.5rem;background-color: var(--bg-focus);border-radius: 50%;margin-right: 0.3rem;}
 .feedback-btn-form{display: flex;width: 100%;justify-content: space-between;align-items: center;margin-top: 2rem;}
-.feedback-btn-form div{width: 48%;height: 2.8rem;background-color: var(--bg-focus);text-align: center;line-height: 2.8rem;}
-.feedback-btn-form input{border: 0;outline: none;width: 100%;height: inherit;background-color: #00BA66;color: #fff;}
+.feedback-btn-form div{width: 48%;height: 2.8rem;background-color: var(--bg-focus);text-align: center;line-height: 2.8rem;color: #fff;}
+.feedback-btn-form div:first-child{background-color: var(--bg-focus);}
+.feedback-btn-form div:last-child{background-color: #00BA66;}
+.feedback-btn-form input{border: 0;outline: none;width: 100%;height: inherit;background-color:transparent;color: #fff;}
 
 /* 图片详情页 */
 .work-details-wrap{width: auto;height: auto;margin: 0 0 2rem 0;display: flex;justify-content: ;flex-wrap: wrap;align-items: flex-start;}
