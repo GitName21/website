@@ -434,5 +434,8 @@ $(document).ready(function(){
 	$('.feedback-btn-form div:first-child').click(function(){
 		$(".mask").fadeOut(300);
 		$('.feedback').css({"animation":"share-close 0.5s ease forwards"})
+		// 关闭遮罩是允许窗口滚动
+		$(document).unbind("scroll.unable");
+		$('body').css({"overflow-y":"scroll"});
 	})
 });
