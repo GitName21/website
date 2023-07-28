@@ -385,30 +385,22 @@ $(document).ready(function(){
 		})(jQuery);
 		var type = $.getUrlParam('type');
 
-		var x = $(".content-menu-item li").toArray();
+		var li = $(".content-menu-item li").toArray();	//获取li并转为数组	x[1].innerHTML读取数组内容
 		
-		var array=new Array();//声明一个新的数组
-		var list1=$(".content-menu-item").children().each(function (index,element) {//遍历每个对象
-		array.push($(this).text());//往数组中存入值
+		var liTextArray = new Array();//声明一个新的数组
+		var list1 = $(".content-menu-item").children().each(function (index,element) {//遍历每个对象
+		liTextArray.push($(this).text());//往数组中存入值
 		});
-		console.log(array);
+		console.log(liTextArray);
 		
-		var t = array.indexOf(type)
+		var liEq = liTextArray.indexOf(type)
 		
-		if(t == "-1"){
+		if(liEq == "-1"){
 			$(".content-menu-item li").eq(0).addClass("current-menu-item");
 		}else{
-			$(".content-menu-item li").eq(t).addClass("current-menu-item");
+			$(".content-menu-item li").eq(liEq).addClass("current-menu-item");
 		}
-		console.log(t)
-		
-		
-		// for (i=0;i<x.length;i++){
-		// 	$(".content-menu-item li").eq[i].addClass("current-menu-item");
-			
-		// 	var t = x[i].indexOf(type)
-		// 	console.log(t)
-		// }
+		console.log(liEq)
 	});	
 	
 });
