@@ -144,7 +144,7 @@ $(document).ready(function(){
 	})
 	// 搜索展开
 	function searchOpen(){
-		$(".search-wrap label").css({"transform":"translateY(-4rem)","transition":"all 0.3s","font-size":"1rem","color":"var(--color-main)"})
+		$(".search-wrap label").css({"transform":"translateY(-4rem)","transition":"all 0.3s","font-size":"1rem"})
 		$(".search-wrap").css({"padding":"0 0 1rem 0","transition":"all 0.3s"})
 	}
 	// 关闭展开

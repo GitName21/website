@@ -108,8 +108,8 @@ body{background-color: var(--bg-main);}
 .search-wrap{position: absolute;display: none;border-bottom: 1px solid #fff;z-index: 99;}
 /* 搜索 */
 .search-wrap input[name="search"]{background-color: rgba(0, 0, 0, 0);width: 50rem;height: 5rem;border: 0px;outline: none;background-color: ;font-size: 1.625rem;color: var(--color-secondly);}
-.search-wrap input[name="search-sub"]{background-color: rgba(0, 0, 0, 0);width: 5rem;height: 5rem;border: 0px;outline: none;color: var(--color-main);font-size: 1.625rem;cursor: pointer;}
-.search-wrap label{position: absolute;font-size: 2rem;top: 1rem;color: var(--color-secondly);}
+.search-wrap input[name="search-sub"]{background-color: rgba(0, 0, 0, 0);width: 5rem;height: 5rem;border: 0px;outline: none;color: #fff;font-size: 1.625rem;cursor: pointer;}
+.search-wrap label{position: absolute;font-size: 2rem;top: 1rem;color: #fff;}
 /* 分享 */
 .share-window{width: 40rem;height: auto;background-color: var(--bg-secondly);position: fixed;display: none;z-index: 99;}
 .share-window div:first-child{display: flex;align-items: center;}
