@@ -445,7 +445,7 @@ $(document).ready(function(){
 	// 返回
 	$('.back').click(function(){
 		document.referrer === '' ?
-		window.location.href = '../index.html' :
+		window.location.href = 'https://gitname21.github.io/website/' :
 		window.history.go(-1);
 	})
 	
