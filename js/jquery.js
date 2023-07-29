@@ -9,6 +9,9 @@ $(document).ready(function(){
 			$(".nav-more").css({"animation":"nav-more-close 0.5s ease forwards"})
 		}
 	});
+	$(document).scroll(function(){
+		$(".nav-more").css({"animation":"nav-more-close 0.5s ease forwards"})
+	})
 	
 	// 浅色模式
 	// 打开浅色模式按钮
@@ -438,4 +441,12 @@ $(document).ready(function(){
 		$(document).unbind("scroll.unable");
 		$('body').css({"overflow-y":"scroll"});
 	})
+	
+	// 返回
+	$('.back').click(function(){
+		document.referrer === '' ?
+		window.location.href = '../index.html' :
+		window.history.go(-1);
+	})
+	
 });
