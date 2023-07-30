@@ -4,11 +4,13 @@
 	--bg-secondly:#232222;
 	--bg-less:#373737;
 	--bg-focus:#4e54e9;
+	--bg-hint:#e94848;
 	
 	/* 字体色 */
 	--color-main:#ffffff;
 	--color-secondly:#A6A6A6;
 	--color-focus:#4e54e9;
+	--color-hint:#e94848;
 	
 	/* 边框 */
 	--boder:#373737;
