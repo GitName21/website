@@ -10,7 +10,12 @@ $(document).ready(function(){
 		}
 	});
 	$(document).scroll(function(){
-		$(".nav-more").css({"animation":"nav-more-close 0.5s ease forwards"})
+		var cssValue = $('.nav-more').css('animation');
+		if(cssValue == "none 0s ease 0s 1 normal none running" || cssValue == "0.5s ease 0s 1 normal forwards running nav-more-close"){
+			// $(".nav-more").css({"animation":"nav-more 0.5s ease forwards"})
+		}else{
+			$(".nav-more").css({"animation":"nav-more-close 0.5s ease forwards"})
+		}
 	})
 	
 	// 浅色模式
