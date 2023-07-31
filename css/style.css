@@ -217,6 +217,8 @@ textarea[name="feedback-cont"]{width: 96%;height: 6.25rem;background-color: rgba
 .weather li p{margin: 0.5rem 0;}
 .weather li p:first-child{margin-top: 0;}
 .weather span:first-child{display: flex;justify-content: flex-end;}
+.weather span:first-child svg{cursor: pointer;}
+.icon-show{display:none;}
 .weather-line{margin : 1rem 0;}
 .week{font-size: 1.5rem;}
 .time{display: flex;flex-wrap: nowrap;}

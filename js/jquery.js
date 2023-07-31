@@ -456,4 +456,16 @@ $(document).ready(function(){
 		window.history.go(-1);
 	})
 	
+	// 天气收起
+	$(".icon-close").click(function(){
+		$('.weather li:last-child').css({"display":"none"})
+		$('.icon-show').css({"display":"block"})
+		$('.icon-close').css({"display":"none"})
+	})
+	$(".icon-show").click(function(){
+		$('.weather li:last-child').css({"display":"block"})
+		$('.icon-show').css({"display":"none"})
+		$('.icon-close').css({"display":"block"})
+	})
+	
 });
