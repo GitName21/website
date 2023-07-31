@@ -468,4 +468,14 @@ $(document).ready(function(){
 		$('.icon-close').css({"display":"block"})
 	})
 	
+	// 展开标签
+	$('.article-label div span:last-child').click(function(){
+		$('.article-label').css({"height":"8rem"})
+		$('.article-label div span:last-child').css({"display":"none"})
+	})
+	$('.article-label p').click(function(){
+		$('.article-label').css({"height":"4.4rem"})
+		$('.article-label div span:last-child').css({"display":"block"})
+	})
+	
 });

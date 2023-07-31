@@ -223,10 +223,11 @@ textarea[name="feedback-cont"]{width: 96%;height: 6.25rem;background-color: rgba
 .week{font-size: 1.5rem;}
 .time{display: flex;flex-wrap: nowrap;}
 .temperature{font-size:  1.5rem;margin-top: 1rem;}
-.article-label{background-color: var(--bg-secondly);padding: 1rem 2rem;display: flex;justify-content: space-between;flex-wrap: wrap;}
+.article-label{background-color: var(--bg-secondly);padding: 1rem 2rem;display: flex;justify-content: space-between;flex-wrap: wrap;height:4.4rem;overflow: hidden;transition: all 0.3s ease;}
+.article-label p{width: 100%;font-size: 0.78rem;text-align: center;color: var(--color-secondly);}
 .article-label div{display: flex;justify-content: space-between;width: 100%;}
-.article-label div span{display: flex;align-items: center;color: var(--color-main);}
-.article-label li{display: flex;justify-content: center;width: 3.75rem;height: 1.375rem;border-radius: 10rem;flex-wrap: wrap;align-items: center;font-size: 0.875rem;margin-top: 1rem;color: #fff;}
+.article-label div span{display: flex;align-items: center;color: var(--color-main);cursor: pointer;}
+.article-label li{display: flex;justify-content: center;width: 4rem;height: 1.375rem;border-radius: 10rem;flex-wrap: wrap;align-items: center;font-size: 0.875rem;margin-top: 1rem;color: #fff;}
 .article-label-ps{background: linear-gradient(219.64deg, rgba(43, 120, 252, 1) 0%, rgba(5, 88, 255, 1) 100%);}
 .article-label-ai{background: linear-gradient(219.64deg, rgba(235, 168, 68, 1) 0%, rgba(255, 122, 5, 1) 100%);}
 .article-label-php{background: linear-gradient(219.64deg, rgba(0, 94, 255, 1) 0%, rgba(0, 189, 252, 1) 100%);}
@@ -351,6 +352,8 @@ textarea[name="feedback-cont"]{width: 96%;height: 6.25rem;background-color: rgba
 	.article-list-right{width: 100%;margin-top: 1rem;}
 	.article-lists-tit div p:first-child{font-size: 1rem;}
 	.article-lists-tit div p:last-child{font-size: 0.875rem;margin-top: 0.5rem;}
+	.article-label{height:4.4rem;}
+	.article-label li{width: 3.75rem;}
 		
 	/* 文章详情页 */
 	.article-details-tit{font-size: 1.2rem;margin-bottom: 1rem;}
