@@ -273,6 +273,13 @@ textarea[name="feedback-cont"]{width: 96%;height: 6.25rem;background-color: rgba
 
 /* 留言 */
 .leave-word-tit,.back{display: none;}
+.leaveword-wrap{width: 90%;height: 400px;background-color: var(--bg-secondly);padding: 5%;}
+.leaveword-wrap>div{margin-bottom: 2rem;}
+.leaveword-wrap input[name="leavewrod-name"]{width: 98%;height: 3.75rem;background-color: var(--bg-less);padding: 0 1%;outline: none;border: 0;color: var(--color-main);}
+.leavewrod-tit{color: var(--color-main);margin-bottom: 0.5rem;}
+.leavewrod-hint{color: var(--bg-hint);font-size: 0.845rem;margin-top: 0.5rem;display: flex;align-items: center;}
+.leavewrod-hint span:first-child{width: 0.4rem;height: 0.4rem;background-color: var(--bg-hint);border-radius: 50%;margin-right: 0.5rem;}
+.leavewrod-textarea{width: 98%;height: 8rem;resize: none;outline: none;background-color: var(--bg-less);padding:1%;border: 0;color: var(--color-main);}
 
 /* 超小屏幕（手机，小于 768px）*/
 @media(max-width:767px){
